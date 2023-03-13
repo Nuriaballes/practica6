@@ -1,0 +1,46 @@
+---
+title: "pr6"
+author: "Nuria Ballesteros Chornet"
+output: 
+  pdf_document: 
+    latex_engine: xelatex
+date: "2023-03-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)     
+```
+
+##Introduccion
+
+install.packages("latex")
+muestra_normal<-rnorm(1000)
+x<-rnorm(1000)
+hist(muestra_normal)
+x<-sample
+
+#Ej. 1. Para hacer numeros aleatorios
+#Aleatorios sin semilla (generador aleatorio de valores numericos):
+```{r}
+rnorm(5)
+x<-rnorm(1000)
+```
+
+#Aleatroio con semilla
+```{r}
+set.seed(1)
+rnorm(5)
+rnorm(5)
+set.seed(1)
+rnorm(10)
+```
+
+#Ej. 2 Coger una muetrsa normal y otra exponencial o beta, y le aplico a las dos el Test de shapiro (shapiro.test(x))
+
+
+```{r}
+normal<-rexp(x)
+exponencial<-rexp(x)
+shapiro.test(normal)
+shapiro.test(exponencial)
+```
